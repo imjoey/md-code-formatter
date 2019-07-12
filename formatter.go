@@ -63,8 +63,8 @@ func FormatHCLCodeBlock(w io.Writer, codeBlock *ast.CodeBlock) {
 	w.Write(caseSeperator)
 }
 
-// Doer :
-func Doer(file string) {
+// Formatter :
+func Formatter(file string) {
 	content, err := ioutil.ReadFile(file)
 	if err != nil {
 		log.Printf("Failed to read file:  %s\n", err)
