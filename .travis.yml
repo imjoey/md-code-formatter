@@ -1,0 +1,14 @@
+dist: trusty
+sudo: required
+language: go
+
+go:
+- "1.12.x"
+
+script:
+- go test ./... -v
+
+env:
+  - GOFLAGS=-mod=vendor GO111MODULE=on
+
+install: true
